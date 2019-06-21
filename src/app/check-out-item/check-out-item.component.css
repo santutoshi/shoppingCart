@@ -1,0 +1,41 @@
+.m-gallery-product-item-wrap {
+    width: 15%;
+    display: inline-block;
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+}
+.item-main {
+    width: 100%;
+}
+
+.item-img {
+    width: 100%;
+     position: relative; 
+}
+.item-info h2.three-line {
+    height: 40px;
+}
+.item-info .pmo {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    letter-spacing: 0;
+    height: 65px;
+}
+.price {
+    color: #333;
+    line-height: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.min-order {
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+}

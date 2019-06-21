@@ -1,0 +1,40 @@
+<h1> Check Out Items List</h1>
+<div class="m-gallery-product-item-wrap" *ngFor="let item of arrProducts | filterUnique">
+    <div class="item-main" id="product-1">
+      <div class="item-img">
+        <div class="item-img-inner">
+
+          <img  *ngIf="!item.imageUrl" src="../../assets/static/media/100_1.b5714b6a.jpg" height="100" width="80" alt="Image" />
+          <img *ngIf="item.imageUrl" src="{{item.imageUrl}}" height="100" width="80" alt="Image" />
+        </div>
+      </div>
+      <div class="item-info">
+        <h2 class="title  three-line">
+          <label style="font-size: 15px; display: inline-block;">{{item.title}}</label>
+        </h2>
+        <h2 class="title  three-line">
+          <label style="font-size: 12px ;display: inline-block;">{{item.style}}</label>
+        </h2>
+        <div class="pmo">
+          <div class="price">
+            <b>
+              {{item.currencyId}} {{item.currencyFormat}} {{item.price}}
+            </b>
+          </div>
+          <div class="min-order">
+            <b *ngIf="item.isFreeShipping">Free Shipping</b>
+          </div>
+        </div>
+        <div class="stitle util-ellipsis">
+          Avaibale Size:
+          <span>{{item.availableSizes}}</span>
+        </div>
+        <div class="sstitle">
+          <div class="supplier">
+            <button type="button" class="btn btn-large btn-primary">Confirm Order</button>
+          </div>
+        </div>
+        <div class="hr"><span></span></div>
+      </div>
+    </div>
+  </div>

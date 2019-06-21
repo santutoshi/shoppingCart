@@ -1,0 +1,33 @@
+<div id="login-page">
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="form-wrap panel">
+            <h1>Log In to your Account</h1>
+            <div class="alert alert-info">
+              <strong>Info!</strong> Try Defualt (Username = admin) And (Password = admin) for Login.
+            </div>
+            <hr />
+            <div id="login-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" id="username" [(ngModel)]="username" class="form-control"
+                    placeholder="Username/Email" tabindex="1">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" placeholder="Password" id="accPwd" [(ngModel)]="password"
+                    tabindex="2" ng-enter="login()">
+                </div>
+              </div>
+              <input type="submit" id="btn-login" class="btn btn-primary" (click)="login()" value="LOG IN" tabindex="4">
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
-  title = 'shoppingCart';
-  constructor(){
+  title = "shoppingCart";
+  constructor() {}
+  ngOnInit() {
+    //Tyo dada kadha sabai thok
   }
-  ngOnInit(){
-  };
 }
